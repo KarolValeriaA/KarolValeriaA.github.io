@@ -5,111 +5,94 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>CWY</title>
-    <link href="css/bulma-rtl.min.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="Script.js"></script>
+    <link href="content/css/bulma-rtl.min.css" type="text/css" rel="stylesheet" />
+    <link href="content/fontawesome/css/all.min.css" type="text/css" rel="stylesheet" />
+    <link href="content/fontawesome/css/fontawesome.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="content/js/script.js"></script>
+    <script type="text/javascript" src="content/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="content/fontawesome/js/fontawesome.min.js"></script>
 
 </head>
 
 <body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Creativity with you</h1>
-            <hr>
-            <main>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Tama&ntilde;o</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <div class="select">
-                                <select id="sltTamanio">
-                                    <option value="">Selecione...</option>
-                                    <option value="S">Chico</option>
-                                    <option value="M">Mediano</option>
-                                    <option value="L">Grande</option>
-                                </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Color</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <div class="select">
-                                <select id="sltColor">
-                                    <option value=""> Selecione...</option>
-                                    <option value="Blanco">Blanco</option>
-                                    <option value="Natural">Natural</option>
-                                    <option value="Negro">Negro</option>
-                                </select> 
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Mensaje Externo</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <textarea  class="textarea" id="txtMensajeExterno" rows="10" cols="50"
-                                placeholder="¡Felicidades Fernanada!"></textarea>
-                            </div>
-                        </div>
+
+    <nav class="navbar ">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://bulma.io">
+                <img src="content/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
+                    height="28">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+                <span class="icon" style="color: #333;">
+                    <i class="fa fa-github"></i>
+                </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+                <span class="icon" style="color: #55acee;">
+                    <i class="fa fa-twitter"></i>
+                </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenubd-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenubd-example" class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+
+            <div class="navbar-end">
+                
+                <a class="navbar-item is-hidden-desktop-only" href="https://www.instagram.com/cwy_creativity_with_you/" target="_blank">
+                    <span class="icon" style="color: #55acee;">
+                        <i class="fab fa-instagram 3x"></i>
+                    </span>
+                </a>
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+
+                        <p class="control">
+                            <a class="button is-primary" href="infobox.html">
+                                <span class="icon">
+                                    <i class="fas fa-box-open"></i>
+                                </span>
+                                &nbsp;
+                                &nbsp;
+                                <span>Crear pedido</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Mensaje Interno</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control is-expanded has-icons-left">
-                                <textarea  class="textarea" id="txtMensajeInterno" rows="10" cols="50"
-                                placeholder="Pasatela super bien en tu d&iacute;a"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Producto</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control is-expanded has-icons-left">
-                                <input  class="input" id="iptProducto" type="text" placeholder="Peluche">
-                            </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label for=""></label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <button type="button" onclick="MostrarCaja()" class="button is-primary">
-                         Mostrar Caja
-                          </button>
-                        </div>
-                      </div>
-                  </div>
-            </main>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Creativity with you
+                </h1>
+                <h2 class="subtitle">
+                    Productos personalizados
+                </h2>
+            </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+               
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
