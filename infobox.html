@@ -15,56 +15,46 @@
 </head>
 
 <body>
-
     <nav class="navbar ">
         <div class="navbar-brand">
-            <a class="navbar-item" href="http://bulma.io">
-                <img src="content/images/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112"
-                    height="28">
-            </a>
-
-            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
-                <span class="icon" style="color: #333;">
-                    <i class="fa fa-github"></i>
+            <a class="navbar-item is-hidden-desktop" href="index.html">
+                <span class="icon">
+                    <i class="fas fa-home"></i>
                 </span>
+                &nbsp;
+                &nbsp;
+                <span>Inicio</span>
             </a>
-
-            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-                <span class="icon" style="color: #55acee;">
-                    <i class="fa fa-twitter"></i>
-                </span>
-            </a>
-
             <div class="navbar-burger burger" data-target="navMenubd-example">
-                <span></span>
+                <span>
+                    <a href="index.html">
+                        <span>Inicio</span>
+                    </a>
+                </span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-
         <div id="navMenubd-example" class="navbar-menu">
             <div class="navbar-start">
-
             </div>
-
             <div class="navbar-end">
-                
-                <a class="navbar-item is-hidden-desktop-only" href="https://www.instagram.com/cwy_creativity_with_you/" target="_blank">
+                <a class="navbar-item is-hidden-desktop-only" href="https://www.instagram.com/cwy_creativity_with_you/"
+                    target="_blank">
                     <span class="icon" style="color: #55acee;">
                         <i class="fab fa-instagram 3x"></i>
                     </span>
                 </a>
                 <div class="navbar-item">
                     <div class="field is-grouped">
-
                         <p class="control">
-                            <a class="button is-primary" href="infobox.html">
+                            <a class="button is-primary" href="index.html">
                                 <span class="icon">
-                                    <i class="fas fa-box-open"></i>
+                                    <i class="fas fa-home"></i>
                                 </span>
                                 &nbsp;
                                 &nbsp;
-                                <span>Crear pedido</span>
+                                <span>Inicio</span>
                             </a>
                         </p>
                     </div>
@@ -82,109 +72,109 @@
                     Productos personalizados
                 </h2>
             </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Tama&ntilde;o</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <div class="select">
+        </div>
+     </section>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Tama&ntilde;o</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
                                 <select id="sltTamanio">
                                     <option value="">Selecione...</option>
                                     <option value="S">Chico</option>
                                     <option value="M">Mediano</option>
                                     <option value="L">Grande</option>
                                 </select>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Color</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <div class="select">
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Color</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
                                 <select id="sltColor">
                                     <option value=""> Selecione...</option>
                                     <option value="Blanco">Blanco</option>
                                     <option value="Natural">Natural</option>
                                     <option value="Negro">Negro</option>
-                                </select> 
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Mensaje Externo</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                <textarea  class="textarea" id="txtMensajeExterno" rows="10" cols="50"
-                                placeholder="¡Felicidades Fernanada!"></textarea>
+                                </select>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Mensaje Interno</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control is-expanded has-icons-left">
-                                <textarea  class="textarea" id="txtMensajeInterno" rows="10" cols="50"
-                                placeholder="Pasatela super bien en tu d&iacute;a"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Producto</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control is-expanded has-icons-left">
-                                <input  class="input" id="iptProducto" type="text" placeholder="Peluche">
-                            </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label for=""></label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <div class="control">
-                          <button type="button" onclick="MostrarCaja()" class="button is-primary">
-                         Mostrar Caja
-                          </button>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-          
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                   
                 </div>
             </div>
-        </section>
-    
-    
-    </body>
-    
-    </html>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Mensaje Externo</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" id="txtMensajeExterno" rows="10" cols="50"
+                                placeholder="¡Felicidades Fernanada!"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Mensaje Interno</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control is-expanded has-icons-left">
+                            <textarea class="textarea" id="txtMensajeInterno" rows="10" cols="50"
+                                placeholder="Pasatela super bien en tu d&iacute;a"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Producto</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control is-expanded has-icons-left">
+                            <input class="input" id="iptProducto" type="text" placeholder="Peluche">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label for=""></label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <button type="button" onclick="MostrarCaja()" class="button is-primary">
+                            Mostrar Caja
+                        </button>
+                    </div>
+                </div>
+            </div>
+       
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
